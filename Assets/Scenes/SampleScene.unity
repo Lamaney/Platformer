@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 861081462}
   - component: {fileID: 861081461}
   - component: {fileID: 861081463}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -837,8 +837,52 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 19656139715813529, guid: bfab254c65e347e48ad756106d165f15, type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: 939559457233473792, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1448023002253149154}
+    - target: {fileID: 939559457233473792, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 1448023002253149151}
+    - target: {fileID: 939559457233473792, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: rigidbody2D
+      value: 
+      objectReference: {fileID: 1448023002253149152}
+    - target: {fileID: 939559457233473792, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: jumpingPower
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 939559457233473792, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: runningSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 939559457233473792, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448023002133008432, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 0b4b6f317d094a54c94653525ee26a55, type: 2}
+    - target: {fileID: 1448023002133008432, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448023002133008432, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448023002133008432, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: m_GravityScale
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448023002133008432, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448023002133008432, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1448023002133008433, guid: bfab254c65e347e48ad756106d165f15, type: 3}
@@ -851,7 +895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1448023002133008433, guid: bfab254c65e347e48ad756106d165f15, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0567
+      value: -0.43
       objectReference: {fileID: 0}
     - target: {fileID: 1448023002133008433, guid: bfab254c65e347e48ad756106d165f15, type: 3}
       propertyPath: m_LocalPosition.z
@@ -885,9 +929,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1448023002133008434, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 0b4b6f317d094a54c94653525ee26a55, type: 2}
     - target: {fileID: 1448023002133008437, guid: bfab254c65e347e48ad756106d165f15, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+--- !u!4 &1448023002253149151 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1444147218826586521, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+  m_PrefabInstance: {fileID: 1448023002253149150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1448023002253149152 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1448023002133008432, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+  m_PrefabInstance: {fileID: 1448023002253149150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1448023002253149154 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 19656139715813529, guid: bfab254c65e347e48ad756106d165f15, type: 3}
+  m_PrefabInstance: {fileID: 1448023002253149150}
+  m_PrefabAsset: {fileID: 0}
